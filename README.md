@@ -1,7 +1,7 @@
 # Green Signals: ESG Factors in Machine Learning Stock Price Prediction
 
 ## Project Overview
-This project explores the integration of Environmental, Social, and Governance (ESG) factors into machine learning-based stock price prediction. The increasing demand for socially responsible investing has made ESG criteria an important consideration for financial analysis. We investigate whether combining historical financial data with ESG metrics can enhance predictive performance while promoting sustainable investment practices.
+Our project explored how Environmental, Social, and Governance scores can be used to alongside machine learning to make stock price predictions. There is an increasing demand for socially responsible investing which has made ESG criteria an important consideration for financial analysis. We investigated whether combining historical financial data with ESG metrics can enhance predictive performance while promoting sustainable investment practices.
 
 A final presentation summarizing our findings can be accessed [here](https://drive.google.com/file/d/1iO2jaRYafkq5E5xeMubC8wo6cSkyZMcQ/view?usp=sharing).
 
@@ -48,8 +48,3 @@ To execute the notebook, follow these steps:
 1. Open `FinalProject_Group025_FA24.ipynb` in Jupyter Notebook.
 2. Run the cells in sequence to preprocess the data, train models, and evaluate their performance.
 3. Visualizations and results will be generated in the later sections.
-
-## Results & Conclusions
-- The models demonstrated varying degrees of accuracy in predicting stock prices based on ESG factors.
-- Feature importance analysis indicated which ESG metrics were most relevant.
-- Further improvements could involve alternative ML algorithms or additional financial indicators.
