@@ -1,20 +1,55 @@
-This is your group repo for your final project for COGS108.
+# Green Signals: ESG Factors in Machine Learning Stock Price Prediction
 
-This repository is private, and is only visible to the course instructors and your group mates; it is not visible to anyone else.
+## Project Overview
+This project explores the integration of Environmental, Social, and Governance (ESG) factors into machine learning-based stock price prediction. The increasing demand for socially responsible investing has made ESG criteria an important consideration for financial analysis. We investigate whether combining historical financial data with ESG metrics can enhance predictive performance while promoting sustainable investment practices.
 
-Template notebooks for each component are provided. Only work on the notebook prior to its due date. After each submission is due, move onto the next notebook (For example, after the proposal is due, start working in the Data Checkpoint notebook). 
+A final presentation summarizing our findings can be accessed [here](https://drive.google.com/file/d/1iO2jaRYafkq5E5xeMubC8wo6cSkyZMcQ/view?usp=sharing).
 
-This repository will be frozen on the final project due date. No further changes can be made after that time.
+## Authors
+- Auritro Dutta  
+- Jacquelyn Garcia  
+- Prabhmeet Gujral  
+- Ethan Heath  
+- Aniruddh Krovvidi  
 
-Your project proposal and final project will be graded based solely on the corresponding project notebooks in this repository.
+## Dataset & Methodology
+- Data was collected from Yahoo Finance (`yfinance`) and other ESG sources.
+- The dataset includes historical financial indicators and ESG scores.
+- Various machine learning models were implemented to analyze stock price movements:
+  - **Linear Regression**
+  - **Ridge Regression**
+  - **Random Forest Regressor**
+  - **Gradient Boosting Regressor**
+- Feature engineering techniques were applied, including standard scaling and data splitting.
 
-Template Jupyter notebooks have been included, with your group number replacing the XXX in the following file names. For each due date, make sure you have a notebook present in this repository by each due date with the following name (where XXX is replaced by your group number):
+## Dependencies
+To run this project, install the required dependencies using:
 
-- `ProjectProposal_groupXXX.ipynb`
-- `DataCheckpoint_groupXXX.ipynb`
-- `EDACheckpoint_groupXXX.ipynb`
-- `FinalProject_groupXXX.ipynb`
+```bash
+pip install -r requirements.txt
+```
 
-This is *your* repo. You are free to manage the repo as you see fit, edit this README, add data files, add scripts, etc. So long as there are the four files above on due dates with the required information, the rest is up to you all. 
+### Key Libraries Used:
+```python
+import pandas as pd
+import yfinance as yf
+import seaborn as sns
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.linear_model import LinearRegression, Ridge
+from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+from sklearn.model_selection import RandomizedSearchCV
+```
 
-Also, you are free and encouraged to share this project after the course and to add it to your portfolio. Just be sure to fork it to your GitHub at the end of the quarter!
+## Running the Notebook
+To execute the notebook, follow these steps:
+1. Open `FinalProject_Group025_FA24.ipynb` in Jupyter Notebook.
+2. Run the cells in sequence to preprocess the data, train models, and evaluate their performance.
+3. Visualizations and results will be generated in the later sections.
+
+## Results & Conclusions
+- The models demonstrated varying degrees of accuracy in predicting stock prices based on ESG factors.
+- Feature importance analysis indicated which ESG metrics were most relevant.
+- Further improvements could involve alternative ML algorithms or additional financial indicators.
